@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CampusCart
 
-## Getting Started
+A quick-ordering web app for campus students. Order snacks, stationery and daily essentials from the campus store and pick them up at a chosen campus location and time slot.
 
-First, run the development server:
+**Inspiration:** Zepto (Y Combinator). CampusCart adapts the quick-commerce idea to campus life with delivery spots, between-class pickup slots and student deals.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Team
+- Sharmin Jameela
+- Shwetha S
+
+## Features
+- Browse products with search and category filter
+- Product details page
+- Cart with quantity controls and a total
+- Checkout with a campus location and pickup slot
+- Order history with status badges
+- Student deal badges on budget items
+
+## Pages
+| Route | Purpose |
+|---|---|
+| `/` | Landing page |
+| `/products` | Product listing, search and filter |
+| `/products/[id]` | Product details |
+| `/cart` | Cart and checkout |
+| `/orders` | Order history |
+
+## Tech stack
+- Next.js (App Router)
+- React and React Context (Cart and Order state)
+- Tailwind CSS
+- Dummy data in `data/` (no backend in this milestone)
+
+## Project structure
+```
+app/          pages and layout
+components/   reusable UI components
+context/      CartContext, OrderContext
+data/         dummy products and campus options
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run locally
+```
+git clone <repo-url>
+cd campuscart
+npm install
+npm run dev
+```
+Then open http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Documents
+- [PRODUCT-ASSUMPTIONS.md](PRODUCT-ASSUMPTIONS.md)
+- [DESIGN-SYSTEM.md](DESIGN-SYSTEM.md)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notes
+There is no backend yet. Data resets when the page is refreshed.
