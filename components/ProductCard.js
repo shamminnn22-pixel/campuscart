@@ -11,7 +11,9 @@ export default function ProductCard({ product }) {
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col gap-2 shadow-sm">
       <div className="h-32 bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 text-sm">
-        Image
+        <div className="h-32 bg-gray-100 rounded-xl flex items-center justify-center text-8xl">
+            {product.emoji}
+        </div>
       </div>
 
       <div className="flex gap-2 flex-wrap">
