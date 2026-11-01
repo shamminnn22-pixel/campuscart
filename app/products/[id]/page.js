@@ -1,5 +1,5 @@
 "use client";
-import { use } from "react";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 import { products } from "@/data/products";
 import { useCart } from "@/context/CartContext";
@@ -7,8 +7,8 @@ import Button from "@/components/Button";
 import Badge from "@/components/Badge";
 import EmptyState from "@/components/EmptyState";
 
-export default function ProductDetailsPage({ params }) {
-  const { id } = use(params);
+export default function ProductDetailsPage() {
+  const { id } = useParams();
   const { addToCart } = useCart();
 
   const product = products.find((p) => p.id === Number(id));
