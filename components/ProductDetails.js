@@ -33,9 +33,15 @@ export default function ProductDetails({ id }) {
       </Link>
 
       <div className="grid md:grid-cols-2 gap-8 mt-4">
+<<<<<<< HEAD
           <div className="h-72 bg-gray-100 rounded-xl flex items-center justify-center text-8xl">
             {product.emoji}
           </div>
+=======
+        <div className="h-72 bg-gray-100 rounded-xl flex items-center justify-center text-8xl">
+          {product.emoji}
+        </div>
+>>>>>>> 10eafc04975f7f9e40e08df8a63f110a3dfe5c88
 
         <div className="flex flex-col gap-3">
           <div className="flex gap-2 flex-wrap">

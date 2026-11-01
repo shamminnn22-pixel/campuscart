@@ -10,11 +10,17 @@ export default function ProductCard({ product }) {
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col gap-2 shadow-sm">
+<<<<<<< HEAD
       <div className="h-32 bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 text-sm">
         <div className="h-32 bg-gray-100 rounded-xl flex items-center justify-center text-8xl">
             {product.emoji}
         </div>
       </div>
+=======
+      <div className="h-32 bg-gray-100 rounded-lg flex items-center justify-center text-5xl">
+        {product.emoji}
+    </div>
+>>>>>>> 10eafc04975f7f9e40e08df8a63f110a3dfe5c88
 
       <div className="flex gap-2 flex-wrap">
         <Badge>{product.category}</Badge>
